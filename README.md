@@ -41,7 +41,7 @@ You will be using a service known as AWS SES (Simple Email Service)
 ```sudo unattended-upgrades --dry-run```
 
 - restart unattended-upgrades daemon  
-```sudo systemctl status unattended-upgrades```
+```sudo systemctl restart unattended-upgrades```
 
 - install postfix (if not already installed)  
 ```sudo apt-get install postfix```
