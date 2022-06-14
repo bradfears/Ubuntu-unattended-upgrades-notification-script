@@ -34,7 +34,6 @@ for line in logData:
 		#print(message)
 
 		smtpServer = smtplib.SMTP_SSL(smtp, port=smtpPort)
-		smtpServer.login(smtpUsername, smtpPassword)
-		#smtpServer.sendmail(sender, recipients, msg.as_string())
+		smtpServer.login(smtpUsername, smtpPassword)		
 		smtpServer.sendmail(sender, recipients, message)
 		smtpServer.quit()
